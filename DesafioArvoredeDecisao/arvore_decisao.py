@@ -1,8 +1,8 @@
 # %%
 import pandas as pd
 import pingouin as pg
-import plotly.express as px 
-import plotly.figure_factory as ff
+import plotly.express as px  # type: ignore
+import plotly.figure_factory as ff # type: ignore
 import matplotlib.pyplot as plt
 
 
@@ -16,7 +16,7 @@ from sklearn.tree import DecisionTreeClassifier,plot_tree
 from sklearn.metrics import confusion_matrix,classification_report, ConfusionMatrixDisplay
 
 ##Otimização de Hiperpâmetros
-import optuna
+import optuna # type: ignore
 
 # %%
 df_transacoes = pd.read_csv('./datasets/transacoes_fraude.csv')
